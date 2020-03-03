@@ -8,11 +8,16 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 public class WednesdayActivity extends AppCompatActivity {
+
     char degrees = '\u00B0';
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.weather_list);
+
+
         ArrayList<Weather> temperature = new ArrayList<Weather>();
 
         temperature.add(new Weather(R.drawable.clouds,"14"+degrees,"15"+degrees));
